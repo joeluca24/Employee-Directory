@@ -1,13 +1,21 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Faker from "faker";
+import Fakermod from "./utils/fakemod";
+
+
+
 
 function App() {
+  var randomName = Faker.name.findName(); // Rowan Nikolau
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
+         <p>{randomName}</p>
+         <p>{JSON.stringify(Fakermod)}</p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <a
