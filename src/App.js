@@ -26,6 +26,7 @@ function App() {
             <td>{employee.name}</td>
             <td><img src={employee.image} /></td>
           </tr>
+          
         )}
       </table>
 
